@@ -10,9 +10,12 @@ app.set('view engine', 'pug');
  
 
 
-app.post("/kayit/:id/:isim/:soyisim",(req,res)=>{
-    gelendeger = req.body
-    console.log({gelendeger})
+app.post("/kayit",(req,res)=>{
+    
+    isim = req.body.gelenisim;
+    soyisim = req.body.gelensoyisim;
+
+    console.log({isim : isim , soyisim : soyisim})
     user = {
         id : req.params.id,
         isim : req.params.isim,
