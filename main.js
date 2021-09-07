@@ -12,14 +12,14 @@ app.set('view engine', 'pug');
 
 app.post("/kayit",(req,res)=>{
     
-    isim = req.body.gelenisim;
-    soyisim = req.body.gelensoyisim;
+    isim = req.body.isim;
+    soyisim = req.body.soyisim;
 
     console.log({isim : isim , soyisim : soyisim})
     user = {
-        id : req.params.id,
-        isim : req.params.isim,
-        soyisim : req.params.soyisim,
+       
+        isim : isim,
+        soyisim : soyisim,
     }
 
 
@@ -27,15 +27,20 @@ app.post("/kayit",(req,res)=>{
     kullanici.push(user);
 
 
-    res.send({
+   /*
+
+     res.send({
         id : req.params.id,
         isim : req.params.isim,
         soyisim : req.params.soyisim,
     })
+
+
+   */
 })
 
 
-app.get("/ekle",(req,res)=>{
+app.post("/ekle",(req,res)=>{
   
 res.send({kullanici})
 
