@@ -11,7 +11,8 @@ app.set('view engine', 'pug');
 
 
 app.post("/kayit/:id/:isim/:soyisim",(req,res)=>{
-    console.log("kullanici kayit edildi"+req.body)
+    gelendeger = req.body
+    console.log({gelendeger})
     user = {
         id : req.params.id,
         isim : req.params.isim,
