@@ -29,7 +29,7 @@ app.post("/kayit",(req,res)=>{
 
    
 
-     res.end(300)
+     res.send({user})
 
 
    
