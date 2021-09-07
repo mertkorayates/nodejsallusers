@@ -27,16 +27,12 @@ app.post("/kayit",(req,res)=>{
     kullanici.push(user);
 
 
-   /*
+   
 
-     res.send({
-        id : req.params.id,
-        isim : req.params.isim,
-        soyisim : req.params.soyisim,
-    })
+     res.status(200)
 
 
-   */
+   
 })
 
 
