@@ -10,7 +10,7 @@ app.set('view engine', 'pug');
 
 
 app.post("/kayit/:id/:isim/:soyisim",(req,res)=>{
-    console.log("kullanici kayit edildi")
+    console.log("kullanici kayit edildi"+req.bodyParser)
     user = {
         id : req.params.id,
         isim : req.params.isim,
@@ -37,5 +37,5 @@ res.send({kullanici})
 })
 
 app.listen(3000,()=>{
-console.log("Port Openss")
+console.log("Port Open")
 })
