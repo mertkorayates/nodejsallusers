@@ -37,5 +37,5 @@ res.send({kullanici})
 })
 
 app.listen(3000,()=>{
-console.log("Port Open")
+console.log("Port Openss")
 })
