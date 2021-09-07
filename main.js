@@ -29,7 +29,7 @@ app.post("/kayit",(req,res)=>{
 
    
 
-     res.status(200)
+     res.sendStatus(300)
 
 
    
