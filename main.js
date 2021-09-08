@@ -23,7 +23,7 @@ app.post("/kayit",(req,res)=>{
     }
 
 
-    kullanici.push=({user});
+    kullanici.push({user});
 
    
 
@@ -36,7 +36,7 @@ app.post("/kayit",(req,res)=>{
 
 app.post("/ekle",(req,res)=>{
   
-res.send({kullanici})
+res.send(kullanici)
 
 })
 
