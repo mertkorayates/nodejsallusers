@@ -36,7 +36,7 @@ app.post("/kayit",(req,res)=>{
 
 app.post("/ekle",(req,res)=>{
   
-res.send(kullanici)
+res.send({kullanici})
 
 })
 
