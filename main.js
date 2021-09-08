@@ -2,7 +2,7 @@ express = require("express")
 path = require("path")
 bodyParser = require("body-parser")
 app = express();
-var kullanici = [];
+var kullanici = {};
 var views = path.join(__dirname, 'views');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -23,9 +23,7 @@ app.post("/kayit",(req,res)=>{
     }
 
 
-
-    kullanici.push(user);
-
+    kullanici={user}
 
    
 
