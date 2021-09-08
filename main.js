@@ -23,7 +23,7 @@ app.post("/kayit",(req,res)=>{
     }
 
 
-    kullanici.push={user}
+    kullanici.push=({user});
 
    
 
